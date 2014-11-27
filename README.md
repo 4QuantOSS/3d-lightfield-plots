@@ -10,7 +10,6 @@ The easiest way to make these plots is to install the free, open-source [FIJI to
 1. Download and install Fiji from http://fiji.sc/Downloads, make sure Java is installed as well. 
 2. From Lytro Desktop, select the image and File->Export... as __Editable Depth Map (.png)__
 3. You know have three files ```your_image.tiff```, ```your_image.png``` and ```your_image.txt```
-
 4. Load ```your_image.png``` into FIJI
 5. Select Plugins -> New -> Macro
 6. Paste ```run("3D Surface Plot","plotType=3 grid=512 smooth=9 invertZ=1 scaleZ=0.2")``` into the field
