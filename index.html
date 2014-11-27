@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>3d Lightfield Plots by 4Quant</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>3d Lightfield Plots</h1>
+        <p>A tutorial on how to make 3D surface plots from Lytro Depth Map images</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/4Quant/3d-lightfield-plots" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/4Quant/3d-lightfield-plots/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/4Quant/3d-lightfield-plots/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="making-3d-lightfield-plots" class="anchor" href="#making-3d-lightfield-plots" aria-hidden="true"><span class="octicon octicon-link"></span></a>Making 3D Lightfield Plots</h1>
+
+<p>A tutorial on how to make 3D surface plots from Lytro Depth Map images</p>
+
+<h2>
+<a id="setup" class="anchor" href="#setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup</h2>
+
+<p>The easiest way to make these plots is to install the free, open-source <a href="http://fiji.sc/">FIJI tool</a></p>
+
+<ol>
+<li>Download and install Fiji from <a href="http://fiji.sc/Downloads">http://fiji.sc/Downloads</a>, make sure Java is installed as well. </li>
+<li>From Lytro Desktop, select the image and File-&gt;Export... as <strong>Editable Depth Map (.png)</strong>
+</li>
+<li>You know have three files <code>your_image.tiff</code>, <code>your_image.png</code> and <code>your_image.txt</code>
+</li>
+<li>Load <code>your_image.png</code> into FIJI</li>
+<li>Select Plugins -&gt; New -&gt; Macro</li>
+<li>Paste <code>run("3D Surface Plot","plotType=3 grid=512 smooth=9 invertZ=1 scaleZ=0.2")</code> into the field</li>
+<li>Click Run</li>
+<li>Click <code>Load Texture</code> and select "Load File from Disk" and choose the <code>your_image.tiff</code> file</li>
+</ol>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/4Quant">4Quant</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-48764461-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
