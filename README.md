@@ -15,3 +15,10 @@ The easiest way to make these plots is to install the free, open-source [FIJI to
 6. Paste ```run("3D Surface Plot","plotType=3 grid=512 smooth=9 invertZ=1 scaleZ=0.2")``` into the field
 7. Click Run
 8. Click ```Load Texture``` and select "Load File from Disk" and choose the ```your_image.tiff``` file
+
+## Examples
+### Macro flower
+- A flower taken very close up 
+![A flower taken very close up](Flower.png)
+- A bouldering wall
+![Bouldering wall](Rock_Climbing.png)
