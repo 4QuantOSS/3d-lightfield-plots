@@ -19,6 +19,8 @@ The easiest way to make these plots is to install the free, open-source [FIJI to
 ## Examples
 ### Macro flower
 - A flower taken very close up 
+
 ![A flower taken very close up](Flower.png)
 - A bouldering wall
+
 ![Bouldering wall](Rock_Climbing.png)
